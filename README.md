@@ -122,7 +122,7 @@ To run tests, run the following command:
 
 - GitHub: [@githubhandle](https://github.com/johnie261)
 - Twitter: [@twitterhandle](https://twitter.com/njorogejohnie)
-- LinkedIn: [LinkedIn]([https://linkedin.com/in/linkedinhandle](https://www.linkedin.com/in/john-njoroge-19b6a4245/))
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muturijohn/)
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
