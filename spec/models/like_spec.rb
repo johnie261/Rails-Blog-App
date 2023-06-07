@@ -8,13 +8,13 @@ RSpec.describe Like, type: :model do
                              comments_counter: 0, likes_counter: 0)
     first_like = Like.create(post_id: first_post.id, author_id: first_user.id)
 
-    it "creates a like for a post" do
-        expect(first_like.post).to eq(first_post)
-        expect(first_like.author).to eq(first_user)
-      end
+    it 'creates a like for a post' do
+      expect(first_like.post).to eq(first_post)
+      expect(first_like.author).to eq(first_user)
+    end
 
     it 'Like should be valid' do
-        expect(first_like).to be_valid
+      expect(first_like).to be_valid
     end
     it 'author id shoud be present' do
       first_like.author_id = nil

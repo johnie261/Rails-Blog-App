@@ -8,19 +8,19 @@ RSpec.describe Post, type: :model do
                              comments_counter: 0, likes_counter: 0)
 
     it 'post created should be valid' do
-        expect(first_post).to be_valid
+      expect(first_post).to be_valid
     end
 
     it 'title of the post should be present' do
-        expect(first_post.title).to be_present
-        expect(first_post.text).to be_present
+      expect(first_post.title).to be_present
+      expect(first_post.text).to be_present
     end
 
     it 'counters should be valid' do
-        expect(first_post.comments_counter).to be >= 0
-        expect(first_post.likes_counter).to be >= 0
-      end
-  
+      expect(first_post.comments_counter).to be >= 0
+      expect(first_post.likes_counter).to be >= 0
+    end
+
     it 'title shoud be present' do
       first_post.title = nil
       expect(first_post).to_not be_valid

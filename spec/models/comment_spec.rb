@@ -8,15 +8,15 @@ RSpec.describe Comment, type: :model do
                              comments_counter: 0, likes_counter: 0)
     first_comment = Comment.create(author_id: first_user.id, post_id: first_post.id, text: 'Hi am Johnie!')
 
-    it "creates a comment for a post" do
-        expect(first_comment.post).to eq(first_post)
-        expect(first_comment.author).to eq(first_user)
-      end
+    it 'creates a comment for a post' do
+      expect(first_comment.post).to eq(first_post)
+      expect(first_comment.author).to eq(first_user)
+    end
     it 'comment should be present' do
-        expect(first_comment.text).to be_present
-      end
+      expect(first_comment.text).to be_present
+    end
     it 'comment should be valid' do
-        expect(first_comment).to be_valid
+      expect(first_comment).to be_valid
     end
     it 'author id shoud be present' do
       first_comment.author_id = nil
