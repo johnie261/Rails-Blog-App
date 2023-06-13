@@ -7,6 +7,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
+
 end
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
