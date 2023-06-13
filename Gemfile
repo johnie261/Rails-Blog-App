@@ -6,6 +6,7 @@ ruby '3.0.2'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 group :development, :test do
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 
