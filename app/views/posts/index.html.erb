@@ -1,1 +1,31 @@
-<h1>A list of blog posts for a user</h1>
+
+<div class="user-id">
+    <div class="user-container">
+      <div class="img user-photo-container">
+        <%= image_tag @user.photo, alt: 'User Photo' %>
+      </div>
+      <div class="name-counter">
+        <h1> <%= @user.name%> </h1>
+        <h3> Number of post: <%= @user.posts_counter%> </h3>
+      </div>
+    </div>
+
+    <div class="posts-comment">
+      <% @posts.each do |post| %>
+         <div class="posts-container">
+          <a href="posts/<%= post.id %>">
+            <h3> <%= post.title %> </h3>
+            <p> <%= post.text%> </p>
+            <p class="comments-likes"> Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter%> </p>
+          </a>
+        </div>
+
+        <div class="recent-comments">
+            <% post.recent_comments.each do |comment| %>
+                <p> <%= comment.author.name%>: <%= comment.text%> </p>
+            <% end %>
+        </div>
+
+      <% end %>
+    </div>
+</div>
