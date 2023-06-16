@@ -12,13 +12,27 @@
        <p>
           <%= @post.text%>
        </p>
-     </div>
 
+      <% if current_user %>
+        <%= form_with(model: @post.likes.build(author_id: current_user.id), url: user_post_likes_path(post_id: @post.id), class: 'like-form', style: 'display: none;') do |form| %>
+          <%= form.submit 'Like', class: 'all-posts-btn like-btn' %>
+          <% end %>
+      <% end %>
+
+     </div>
        <div class="comments-container-post">
-            <% @comments=Post.find(@post.id).comments %>
-                <% @comments.each do |comment| %>
-                    <p> <%= comment.author.name%>: <%= comment.text%> </p>
-                <% end %>
+          <% @comments=Post.find(@post.id).comments %>
+            <% @comments.each do |comment| %>
+              <p> <%= comment.author.name%>: <%= comment.text%> </p>
+          <% end %>
         </div>
+        <div>
+          <h3 class="new-comment">
+            Leave a Comment
+          </h3>
+          <%= render 'comments/comment_form' %>
+        </div>
+
     </div>
+
 </section>
