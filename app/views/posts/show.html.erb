@@ -13,11 +13,18 @@
           <%= @post.text%>
        </p>
 
-      <% if current_user %>
-        <%= form_with(model: @post.likes.build(author_id: current_user.id), url: user_post_likes_path(post_id: @post.id), class: 'like-form', style: 'display: none;') do |form| %>
-          <%= form.submit 'Like', class: 'all-posts-btn like-btn' %>
-          <% end %>
-      <% end %>
+      <div class="like-comment-btn">
+        <% if current_user %>
+          <%= form_with(model: @post.likes.build(author_id: current_user.id), url: user_post_likes_path(post_id: @post.id), class: 'like-form', style: 'display: none;') do |form| %>
+            <%= form.submit 'Like', class: 'all-posts-btn like-btn' %>
+            <% end %>
+        <% end %>
+
+        <div>
+          <%= link_to 'Comment', new_user_post_comment_path(user_id: current_user.id, post_id: @post.id), class: 'all-posts-btn like-btn' %>
+        </div>
+      </div>
+
 
      </div>
        <div class="comments-container-post">
@@ -25,12 +32,6 @@
             <% @comments.each do |comment| %>
               <p> <%= comment.author.name%>: <%= comment.text%> </p>
           <% end %>
-        </div>
-        <div>
-          <h3 class="new-comment">
-            Leave a Comment
-          </h3>
-          <%= render 'comments/comment_form' %>
         </div>
 
     </div>

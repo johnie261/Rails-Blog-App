@@ -127,6 +127,13 @@ body {
   align-items: center;
 }
 
+.like-comment-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .form {
   height: 100vh;
   display: flex;
@@ -181,6 +188,7 @@ body {
 .form-comment {
   display: flex;
   flex-direction: column;
+  padding: 6rem;
 }
 
 .comment-text {
