@@ -78,10 +78,17 @@ body {
   text-align: end;
 }
 
+.links {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+
 .all-posts-btn {
+  display: flex;
+  align-items: center;
   border: 1px solid black;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   background-color: green;
   color: white;
   border-radius: 0.7rem;
@@ -118,4 +125,77 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+.field label {
+  color: green;
+  font-size: 1.5rem;
+  padding-top:1rem;
+  font-weight: bold;
+}
+
+.text-field {
+  height: 2.1rem;
+  border-radius: .5rem;
+  padding: .4rem;
+}
+
+.text-area {
+  height: 6rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.new-btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+
+
+
+
+.like-btn {
+  margin-bottom: .7rem;
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-text {
+  border-radius: .5rem;
+  padding: .7rem;
+  margin-bottom: .9rem;
+  width: 40%;
+  height: 3rem;
+}
+
+.new-comment {
+  border-top: 2px solid green;
+  padding-top: 1rem;
 }
