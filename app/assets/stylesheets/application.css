@@ -143,27 +143,27 @@ body {
 .field {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  border-radius: .5rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .field label {
   color: green;
   font-size: 1.5rem;
-  padding-top:1rem;
+  padding-top: 1rem;
   font-weight: bold;
 }
 
 .text-field {
   height: 2.1rem;
-  border-radius: .5rem;
-  padding: .4rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
 }
 
 .text-area {
   height: 6rem;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .new-btn {
@@ -172,14 +172,10 @@ body {
   font-size: 1rem;
 }
 
-
-
-
-
 .like-btn {
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
   font-size: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .form-comment {
@@ -188,9 +184,9 @@ body {
 }
 
 .comment-text {
-  border-radius: .5rem;
-  padding: .7rem;
-  margin-bottom: .9rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  margin-bottom: 0.9rem;
   width: 40%;
   height: 3rem;
 }
