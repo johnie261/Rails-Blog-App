@@ -1,0 +1,17 @@
+<section class="form">
+<div class="new-form">
+<%= form_with(model: @post, url: user_posts_path) do |form| %>
+ <div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title, class: "text-field"%>
+ </div>
+ <div class="field">
+  <%= form.label :text %>
+  <%= form.text_area :text, rows: 4, cols: 60, class: "text-area"%>
+ </div>
+ <div>
+  <%= form.submit "Add a post", class: "all-posts-btn new-btn" %>
+ </div>
+<% end %>
+</div>
+</section>
