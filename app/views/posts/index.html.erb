@@ -28,4 +28,5 @@
 
       <% end %>
     </div>
+    Page count <%= @user.posts.count >= 3 ? (@user.posts.count / 3).round + 1 : 1 %>
 </div>
