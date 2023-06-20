@@ -32,7 +32,6 @@ RSpec.describe 'Post Index Page', type: :feature do
 
   it 'displays number of posts' do
     expect(page).to have_content('Number of post: 1')
-
   end
 
   it 'displays user photo' do

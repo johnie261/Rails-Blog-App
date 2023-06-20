@@ -17,7 +17,6 @@ RSpec.describe '/posts', type: :request do
     it 'renders the correct content' do
       expect(response.body).to include('posts')
     end
-
   end
 
   context 'GET /show' do
@@ -37,6 +36,5 @@ RSpec.describe '/posts', type: :request do
     it 'renders the correct content' do
       expect(response.body).to include('posts')
     end
-
   end
 end

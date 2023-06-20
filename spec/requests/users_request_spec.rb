@@ -16,7 +16,6 @@ RSpec.describe '/users', type: :request do
       get users_path
       expect(response.body).to include('users')
     end
-
   end
 
   context 'GET /show' do
@@ -35,6 +34,5 @@ RSpec.describe '/users', type: :request do
     it 'renders the correct content' do
       expect(response.body).to include('user')
     end
-
   end
 end
