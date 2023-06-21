@@ -1,8 +1,6 @@
 <header class='header'>
     <nav class='navbar'>
-        <% if user_signed_in? %>
-            <li class="list"> Welcome <span><%= current_user.name.capitalize %>!</span></li>
-            <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "all-posts-btn logout" %>
+        <% if user_signed_in? %><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "all-posts-btn logout" %>
         <% else %>
             <div class='services' >
                 <li> <%= link_to "Login", new_user_session_path %></li>

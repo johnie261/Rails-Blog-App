@@ -9,13 +9,12 @@ body {
 }
 
 .header {
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 .list {
   list-style: none;
   font-size: 1.5rem;
-  font-weight: bond;
 }
 
 .users {
@@ -60,7 +59,7 @@ body {
 }
 
 .fallback-image {
-  height:100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #ccc;
   display: flex;
@@ -130,7 +129,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 .posts-comment {
@@ -197,7 +196,6 @@ body {
   color: green;
   font-size: 1.5rem;
   padding-top: 1rem;
-  font-weight: bold;
 }
 
 .devise {
@@ -206,14 +204,14 @@ body {
 
 .dvise {
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-top: -2rem;
 }
 
 .check {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   padding-top: 1rem;
 }
 
