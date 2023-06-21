@@ -49,6 +49,21 @@ body {
   text-align: end;
 }
 
+.fallback-image {
+  height:100%;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initials {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
 .user-id {
   display: flex;
   flex-direction: column;
@@ -92,6 +107,13 @@ body {
   background-color: green;
   color: white;
   border-radius: 0.7rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: .7rem;
 }
 
 .posts-comment {
@@ -161,6 +183,23 @@ body {
   font-weight: bold;
 }
 
+.devise {
+  width: 120%;
+}
+
+.dvise {
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: -2rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding-top: 1rem;
+}
+
 .text-field {
   height: 2.1rem;
   border-radius: 0.5rem;
@@ -202,4 +241,17 @@ body {
 .new-comment {
   border-top: 2px solid green;
   padding-top: 1rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 1.5rem;
+}
+
+.notice {
+  color: green;
 }
