@@ -5,7 +5,7 @@ RSpec.describe 'Post show Page', type: :feature do
     @user = User.create(name: 'John', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Artist from Kenya.')
     @post = Post.create(author: @user, title: 'First post', text: 'This is my first post')
     5.times do |i|
-      Comment.create(text: "This is comment ##{i}", author_id_id: @user.id, post_id_id: @post.id)
+      Comment.create(text: "This is comment ##{i}", author: @user, post: @post)
     end
     visit user_post_path(@user.id, @post.id)
   end
