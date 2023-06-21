@@ -8,6 +8,16 @@ body {
   text-decoration: none;
 }
 
+.header {
+  padding: .8rem;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bond;
+}
+
 .users {
   display: flex;
   flex-direction: column;
@@ -97,6 +107,13 @@ body {
   display: flex;
   gap: 2rem;
   margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .all-posts-btn {
@@ -254,4 +271,8 @@ body {
 
 .notice {
   color: green;
+}
+
+.alert {
+  color: red;
 }
