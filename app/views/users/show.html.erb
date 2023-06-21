@@ -1,7 +1,13 @@
 <div class="user-id">
     <div class="user-container">
       <div class="img user-photo-container ">
-        <%= image_tag @user.photo, alt: 'User Photo' %>
+        <% if @user.photo.present? %>
+            <%= image_tag @user.photo, alt: 'User Photo' %>
+          <% else %>
+            <div class="fallback-image">
+              <%= content_tag(:span, @user.name.first, class: 'initials') %>
+            </div>
+        <% end %>
       </div>
       <div class="name-counter">
         <h1> <%= @user.name%> </h1>
@@ -32,9 +38,8 @@
   <%= link_to user_posts_path(@user.id), class: 'all-posts-btn' do %>
         <p>See all posts</p>
   <% end %>
-
-  <%= link_to 'Add New Post', new_user_post_path(user_id: current_user.id), class: 'all-posts-btn' %>
-
+  
+  <%= link_to 'Add New Post', new_user_post_path(@user), class: 'all-posts-btn' %>
 
 
 </div>
@@ -42,7 +47,8 @@
 
     <% else %>
       <div>
-         <h2>The user has no post</h2>
+         <h2>The user has no post, Add a post?</h2>
+         <%= link_to 'Add New Post', new_user_post_path(@user), class: 'all-posts-btn' %>
       </div>
     <% end %>
 

@@ -2,7 +2,13 @@
     <% @users.each do |user| %>
         <div class="user-container">
             <div class="img user-photo-container">
-               <%= image_tag user.photo, alt: 'User Photo' %>
+              <% if user.photo.present? %>
+                <%= image_tag user.photo, alt: 'User Photo' %>
+              <% else %>
+                <div class="fallback-image">
+                    <%= content_tag(:span, user.name.first, class: 'initials') %>
+                </div>
+              <% end %>
             </div>
 
             <div class="name-counter">
