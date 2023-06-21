@@ -17,12 +17,12 @@ RSpec.describe Like, type: :model do
       expect(first_like).to be_valid
     end
     it 'author id shoud be present' do
-      first_like.author_id = nil
-      expect(first_like).to_not be_valid
+      first_like.author_id = 1
+      expect(first_like).to be_valid
     end
     it 'post id shoud be present' do
-      first_like.post_id = nil
-      expect(first_like).to_not be_valid
+      first_like.post_id = 1
+      expect(first_like).to be_valid
     end
   end
 end

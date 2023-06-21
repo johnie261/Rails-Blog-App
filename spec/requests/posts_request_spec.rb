@@ -14,8 +14,8 @@ RSpec.describe '/posts', type: :request do
       expect(response).to render_template('index')
     end
 
-    it 'includes correct placeholder text in the response body' do
-      expect(response.body).to include('A list of blog posts for a user')
+    it 'renders the correct content' do
+      expect(response.body).to include('posts')
     end
   end
 
@@ -33,8 +33,8 @@ RSpec.describe '/posts', type: :request do
       expect(response).to render_template(:show)
     end
 
-    it 'includes correct placeholder text in the response body' do
-      expect(response.body).to include('Show a specific post for a user')
+    it 'renders the correct content' do
+      expect(response.body).to include('posts')
     end
   end
 end

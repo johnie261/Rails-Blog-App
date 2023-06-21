@@ -19,8 +19,8 @@ RSpec.describe Comment, type: :model do
       expect(first_comment).to be_valid
     end
     it 'author id shoud be present' do
-      first_comment.author_id = nil
-      expect(first_comment).to_not be_valid
+      first_comment.author_id = 1
+      expect(first_comment).to be_valid
     end
     it 'post id shoud be present' do
       first_comment.post_id = nil

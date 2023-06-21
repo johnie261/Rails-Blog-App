@@ -12,9 +12,9 @@ RSpec.describe '/users', type: :request do
       expect(response).to render_template('index')
     end
 
-    it 'includes correct placeholder text in the response body' do
+    it 'renders the correct content' do
       get users_path
-      expect(response.body).to include('A list of all users')
+      expect(response.body).to include('users')
     end
   end
 
@@ -31,8 +31,8 @@ RSpec.describe '/users', type: :request do
       expect(response).to render_template(:show)
     end
 
-    it 'includes correct placeholder text in the response body' do
-      expect(response.body).to include('Display a specific user')
+    it 'renders the correct content' do
+      expect(response.body).to include('user')
     end
   end
 end

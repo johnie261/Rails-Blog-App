@@ -124,6 +124,13 @@ To run tests, run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/njorogejohnie)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/muturijohn/)
 
+👤 **Shayan**
+
+- GitHub: [Shayan1234554321](https://github.com/shayan1234554321)
+- Twitter: [@shayan123455432](https://twitter.com/shayan123455432)
+- LinkedIn: [Shayan Khan](https://www.linkedin.com/in/shayan-khan20/)
+
+
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## 🔭 Future Features <a name="future-features"></a>
