@@ -1,8 +1,14 @@
 
 <div class="user-id">
     <div class="user-container">
-      <div class="img user-photo-container">
-        <%= image_tag @user.photo, alt: 'User Photo' %>
+      <div class="img user-photo-container ">
+        <% if @user.photo.present? %>
+            <%= image_tag @user.photo, alt: 'User Photo' %>
+          <% else %>
+            <div class="fallback-image">
+              <%= content_tag(:span, @user.name.first, class: 'initials') %>
+            </div>
+        <% end %>
       </div>
       <div class="name-counter">
         <h1> <%= @user.name%> </h1>

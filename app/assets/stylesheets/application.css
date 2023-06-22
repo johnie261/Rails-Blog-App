@@ -8,6 +8,15 @@ body {
   text-decoration: none;
 }
 
+.header {
+  padding: 0.8rem;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
 .users {
   display: flex;
   flex-direction: column;
@@ -49,6 +58,21 @@ body {
   text-align: end;
 }
 
+.fallback-image {
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initials {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
 .user-id {
   display: flex;
   flex-direction: column;
@@ -82,6 +106,13 @@ body {
   display: flex;
   gap: 2rem;
   margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .all-posts-btn {
@@ -92,6 +123,13 @@ body {
   background-color: green;
   color: white;
   border-radius: 0.7rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.7rem;
 }
 
 .posts-comment {
@@ -158,7 +196,23 @@ body {
   color: green;
   font-size: 1.5rem;
   padding-top: 1rem;
-  font-weight: bold;
+}
+
+.devise {
+  width: 120%;
+}
+
+.dvise {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: -2rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
 }
 
 .text-field {
@@ -202,4 +256,21 @@ body {
 .new-comment {
   border-top: 2px solid green;
   padding-top: 1rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-top: 1.5rem;
+}
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
 }
